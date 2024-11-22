@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exams Scores</title>
+    <style>
+      h1 {
+        text-align: center;
+        align-items: center;
+      }
+      h2 {
+        text-align: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grade Calculator</h1>
+    <script>
+      let mark = parseInt(prompt("Enter your mark (0 - 100):"));
+
+      let grade;
+
+      if (mark >= 70 && mark <= 100) {
+        grade = "A 🙌";
+      } else if (mark >= 50 && mark <= 69) {
+        grade = "C 👏";
+      } else if (mark >= 21 && mark <= 49) {
+        grade = "F 😣";
+      } else if (mark >= 0 && mark <= 20) {
+        grade = "Not Good Enough 😢";
+      } else {
+        grade = "Invalid mark! Please enter a number between 0 and 100.";
+      }
+
+      document.write(`<h2>Your grade is: ${grade}</h2>`);
+    </script>
+  </body>
+</html>
